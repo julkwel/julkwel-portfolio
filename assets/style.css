@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
+:root {
+  --main-color: #444054;
+  --secondary-color: #2f243a;
+  --rose-color: #BEBBBB;
+  font-family: Poppins;
+}
+
+body {
+  background-color: var(--main-color);
+  margin: 0 0 0px 0;
+  padding: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.main-header {
+  display: flex;
+  height: 100vh;
+  color: white;
+}
+
+.img-container {
+  border-radius: 80px 0 0 80px;
+}
+
+img.profile-image {
+  border-radius: 10% 30% 0px;
+  box-shadow: -1px 3px 0px 0px white;
+}
+
+h2 {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.intro {
+  margin-left: 30%;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
